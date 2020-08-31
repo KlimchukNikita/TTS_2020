@@ -1,0 +1,161 @@
+@font-face {
+    src: url("assets/fons/OpenSansCondensed-LightItalic.ttf") format("truetype");
+    font-family: "OpenSansCondensed-LightItalic";
+    font-weight: 300;
+    font-style: italic;
+}
+
+@keyframes myAnimation {
+    0% {
+        transform: rotate(0deg);
+        background-color: rgb(255, 0, 0);
+    }
+
+    20% {
+        background-color: rgb(115, 255, 0);
+    }
+
+    50% {
+        background-color: rgb(0, 255, 255);
+    }
+
+    70% {
+        background-color: rgb(0, 26, 255);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: rgb(255, 0, 157);
+    }
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "OpenSansCondensed-LightItalic";
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(140, 0, 255);
+    background-color: black;
+    display: flex;
+    min-width: 300px;
+    min-height: 700px;
+}
+
+.user_info {
+    background-color: blue;
+    width: 30%;
+    height: 100%;
+    background-image: url("assets/images/1.jpg");
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 300px;
+    min-height: 700px;
+}
+
+.main_theme {
+    background-color: crimson;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 300px;
+    min-height: 700px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+    padding-left: 0;
+}
+
+.navigation a {
+    text-decoration-line: none;
+    padding: 1em 4em;
+    display: block; 
+}
+
+.navigation li:hover {
+    background-color: rgb(54, 48, 65);
+}
+
+.content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button {
+    display: block;
+    border: 3px solid rgb(54, 48, 65);
+    width: 20%;
+    height: 40%;
+    border-radius: 0.35em;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgb(54, 48, 65);
+    animation: myAnimation 6s linear infinite;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 60px;
+}
+
+main {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+.user_info span {
+    font-size: 50px;
+    width: 70%;
+    margin-bottom: 100px;
+    text-align: center;
+
+ }
+
+ .footer span {
+    width: 70%;
+    text-align: center;    
+ }
+ 
